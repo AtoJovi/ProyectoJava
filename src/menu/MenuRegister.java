@@ -14,7 +14,11 @@ public class MenuRegister {
 	 String  nameUser = "";
 	 String cle = "";
 	 String completName = "";
-	 int age = 0;
+	 //Esto lo he cambiado a String para que se trague todo lo que le metas
+	//Si lo dejamos como int y no meten un numero casca, pero poniendolo como String no da problemas metas un numero o una letra
+	// Se podia hacer una clase de validacion para ver que los datos introducidos son coherentes y en el caso de que no mostrar mensaje
+	 // y que vuelva a introducirlos pero eso ya lo que te quieras complicar
+	 String age = "";
 	 String nif = "";
 	 String mail = "";
 	 String address = "";
@@ -43,7 +47,7 @@ public class MenuRegister {
 			System.out.println(TXTFOUR);
 			//esto es para recoger la excepcion por si se da un caracter en vez de numérico
 //			try {
-				age = entradaScanner.nextInt();
+				age = entradaScanner.nextLine();
 			
 //			}catch(Exception e){
 //				age = 0;
@@ -59,7 +63,20 @@ public class MenuRegister {
 			address = entradaScanner.nextLine();
 			System.out.println(TXTEIGHT);
 			birth = entradaScanner.nextLine();
-		
+
+			//Una vez capturados los valores hay que hacer un objeto tipo User y setearle los valores
+			//User user = new ...
+
+		//Luego creamos un objeto tipo Conexion para que nos conecte a bbdd
+		//si va bien que muestre un mensaje de que se ha conectado
+		// si no uno de error
+
+		//Preparamos la consulta apoyandonos en la clase querys para hacer el inssert en la tabla users
+		//si todo va bien mensaje de ok
+		//si algo va mal mensaje de KO
+
+		//PD esto son solo ideas si ves alguna manera mejor de hacerlo pues dale!!
+
 	}
 	
 }
