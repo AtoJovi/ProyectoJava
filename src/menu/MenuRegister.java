@@ -18,6 +18,7 @@ public class MenuRegister {
 	//Si lo dejamos como int y no meten un numero casca, pero poniendolo como String no da problemas metas un numero o una letra
 	// Se podia hacer una clase de validacion para ver que los datos introducidos son coherentes y en el caso de que no mostrar mensaje
 	 // y que vuelva a introducirlos pero eso ya lo que te quieras complicar
+
 	 String age = "";
 	 String nif = "";
 	 String mail = "";
